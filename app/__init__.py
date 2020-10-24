@@ -7,11 +7,9 @@ from flask_uploads import UploadSet,configure_uploads,IMAGES
 from flask_mail import Mail
 from flask_simplemde import SimpleMDE
 
-
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
-
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
@@ -20,16 +18,12 @@ mail = Mail()
 
 simple = SimpleMDE()
 
-
-
 def create_app(config_name):
-
     app = Flask(__name__)
 
     # Creating the app configurations
     app.config.from_object(config_options[config_name])
     
-
     # Initializing flask extensions
     bootstrap.init_app(app)
     db.init_app(app)
