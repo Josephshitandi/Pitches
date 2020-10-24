@@ -13,6 +13,6 @@ def index():
     Index page
     return
     '''
-    message= "Hello, welcome to Pitch-App!!"
+    message= "Welcome to Pitch Application!!"
     title= 'Pitch-app!'
     return render_template('index.html', message=message,title=title)
