@@ -9,9 +9,9 @@ An application that allows users to use that one minute wisely. The users submit
 </table>
 
 ## Demo
-Here is a working live demo : 
+Here is a working live demo : https://shitandi-pitch-app.herokuapp.com/
 
-Here is my figma link: 
+Here is my figma link: https://www.figma.com/file/Klmw7xsTfZRHY9xWbrTBV3/Pitches?node-id=0%3A1
 
 ## Mobile support
 The Pitches is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
