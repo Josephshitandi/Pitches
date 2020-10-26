@@ -37,7 +37,7 @@ def new_pitch():
 
         return redirect(url_for('main.index'))
 
-    return render_template('pitch.html',pitch_entry= form)
+    return render_template('pitch.html',form= form)
 
 @main.route('/categories/<cate>')
 def category(cate):

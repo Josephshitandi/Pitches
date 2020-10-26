@@ -1,12 +1,14 @@
 {% extends 'base.html'%}
 {% import "bootstrap/wtf.html" as wtf %}
 
-
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
+{% endblock %}
 
 {% block content %}
-<body style="background: rgba(26, 27, 26, 0.3);">
+<body >
 <br><br> <br>
-<h3 class="text-center" style="color: brown;">view new comments </h2>
+<h3 class="text-center" >view new comments </h2>
   {% for comm in comment[::-1] %}
   <div class="container">
     <div class="row">
@@ -19,7 +21,7 @@
               <h4 class="card-title">{{comm.author}}</h4>
               <p class="card-text">{{comm.comment}}.</p>
             </div>
-            <div class="card-footer bg-transparent border-success"><small class="text-muted">Publish date:{{comm.date_posted.strftime('%Y-%m-%d')}}</small></div>
+            <div class="card-footer bg-transparent border-success"><small>Publish date:{{comm.date_posted.strftime('%Y-%m-%d')}}</small></div>
           </div>
         </div>
       </div>

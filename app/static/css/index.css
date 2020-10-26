@@ -1,0 +1,10 @@
+body{
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+}
+h3, h2, h1{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
