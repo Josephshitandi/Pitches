@@ -1,6 +1,6 @@
 from flask import render_template,request,redirect,url_for,abort
 from flask_login import login_required,current_user
-from ..models import Pitches,Role,User
+from ..models import Pitches,Role,User,Comments
 from . import main
 from flask import render_template
 from .. import db,photos
